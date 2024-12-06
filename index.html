@@ -1,12 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Café Brûlée</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Brûlée</title>
+    <style>
+        /* Reset some default styles */
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            background-color: #fdf7f2;
+            color: #3e2723;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, #d7a762, #8e583e);
+            color: #fdf7f2;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+        }
+
+        header p {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        nav {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fdf7f2;
+            background: #8e583e;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #d7a762;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            border-bottom: 2px solid #d7a762;
+            padding-bottom: 5px;
+        }
+
+        .content p {
+            margin: 10px 0;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            width: 180px;
+            text-align: center;
+            padding: 15px;
+            background: #fdf7f2;
+            border: 1px solid #d7a762;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #8e583e;
+            color: #fdf7f2;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                padding: 8px 15px;
+            }
+
+            .menu-item {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-
-<h1>Menu</h1>
-<p>My first paragraph.</p>
-
+    <header>
+        <h1>Café Brûlée</h1>
+        <p>Your daily dose of happiness in a cup</p>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main class="content">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                At Café Brûlée, we believe every sip tells a story. From ethically sourced beans to perfectly brewed cups, 
+                we’re here to bring you the best coffee experience in a warm and welcoming atmosphere.
+            </p>
+        </section>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu">
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/150" alt="Espresso">
+                    <h3>Espresso</h3>
+                    <p>$3.00</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/150" alt="Latte">
+                    <h3>Latte</h3>
+                    <p>$4.50</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/150" alt="Cappuccino">
+                    <h3>Cappuccino</h3>
+                    <p>$4.00</p>
+                </div>
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/150" alt="Cold Brew">
+                    <h3>Cold Brew</h3>
+                    <p>$4.50</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>
+                We’d love to hear from you! Visit us at 123 Coffee Lane, Beansville, or reach out via 
+                <a href="mailto:hello@CaféBrûlée.com">hello@coffeebliss.com</a>.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Café Brûlée. Crafted with care and caffeine.</p>
+    </footer>
 </body>
 </html>
