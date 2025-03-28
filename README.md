@@ -79,7 +79,7 @@
     </style>
 </head>
 <body>
-    <div class="title">Happy Birthday Kanak!</div>
+    <div class="title">Happy Birthday pepper <3</div>
     
     <div class="balloon balloon1"></div>
     <div class="balloon balloon2"></div>
