@@ -7,7 +7,7 @@
     <style>
         body {
             background-color: #f5f5f5;
-            font-family: 'Arial', sans-serif;
+            font-family: 'emilys candy', sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
